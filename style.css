@@ -1,0 +1,537 @@
+/*
+Theme Name: Delicious-oh-nom-nom
+Theme URI: http://cjewett1.dmitstudent.ca/dmit2032/assignment-3/
+Author: Clinton Jewett
+Description: Theme for assignment 3
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: delicious-oh-nom-nom
+*/
+
+/* Color Palette
+cream-yellow: #FBF49D;
+dark-background: #241C11;
+button-color: #92A742;
+heading-color: #2B4B40;
+text-color: #FDFBE1;
+*/
+
+/* Typography and Font Styles/Colors*/
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+}
+
+.page-id-159 main, .page-id-81 main, .page-id-84 main{
+    text-align: center;
+}
+
+header li a {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+.banner-section{
+    color: #fdfbe1;
+}
+
+.banner-section h2{
+    color: #fbf49d;
+}
+
+.page-id-18 p{
+     margin-bottom: 2rem;
+}
+
+.page-id-20 img.attachment-my-photos.size-my-photos {
+    height: auto;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.individual-recipes-heading{
+    color: #fbf49d;
+}
+
+.individual-recipes-description, .preparation-container, .categories-container{
+    color: #fdfbe1;
+}
+
+.categories-container a{
+    text-decoration: none;
+    color: #fdfbe1;
+}
+/* End of Typography */
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    max-width: 1280px;
+    margin: 1rem auto;
+}
+
+.pagination a{
+    color: #241C11;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+.pagination a #text{
+    display: none;
+}
+
+.single img.attachment-my-photos.size-my-photos {
+    width: 100%;
+    height: auto;
+}
+
+/* Button Styles */
+.banner-button, .about-us-button{
+    background-color: #fbf49d;
+    padding: 1rem 1rem;
+    margin: 2rem 0rem;
+    border-radius: 2.5px;
+}
+
+.banner-button:hover, .about-us-button:hover{
+    background-color: #241c11;
+    color: #fbf49d;
+}
+
+/* End of Button styles */
+
+
+/* Layout/General styles */
+li{
+    list-style-type: none;
+}
+
+.page-id-18 img.attachment-my-photos.size-my-photos {
+    width: 100%;
+    height: auto;
+}
+
+
+/* About Us Styles */
+.about-us-image{
+    width: 100%;
+    max-width: 840px;
+    height: auto;
+}
+
+.more-about-us-container{
+    margin-bottom: 2.5rem;
+}
+
+.more-about-us-flex-item{
+    margin-bottom: 2.5rem;
+}
+/* End of About Us styles */
+
+
+/* Banner Styles */
+.banner-section{
+    position: relative;
+}
+
+.banner-image{
+    height: auto;
+    width: 100%;
+}
+
+.banner-overlay{
+    position: relative;
+    top: -10rem;
+    background: rgb(36, 28, 17, 0.9);
+    padding: 4rem 2.5rem 5rem 2.5rem;
+    border-radius: 5px;
+}
+/* End of Banner Styles */
+
+
+/* Header Styles */
+
+header{
+    margin-top: 0rem;
+}
+
+.header-nav header{
+    margin-top: 1rem;
+}
+
+
+ul#main-menu {
+    padding-left: 0rem;
+}
+
+header{
+
+    background: #fdfbe1;
+} 
+
+.toggle-btn {
+	border: none;
+	background: #fdfbe1;
+	outline: none;
+    fill: #323232;
+}
+
+.toggle-btn:hover {
+	cursor: pointer;
+}
+
+.menu li {
+	line-height: 3.5rem;
+	text-align: center;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+
+svg rect {
+    width: 100px;
+    height: 20px;
+}
+
+header nav {
+	position: absolute;
+	left: 0;
+	width: 100vw;
+    z-index: 1;
+	max-height: 0;
+	overflow: hidden;
+	background-color: white;
+	transition: max-height 0.7s ease-in-out;
+}
+
+header a{
+    display: block;
+}
+
+header a:hover{
+    color: #fdfbe1;
+}
+
+header li:hover{
+    background-color: #241C11;
+    color: #fdfbe1;
+    text-decoration: underline;
+}
+
+.show-nav {
+	max-height: 244px;
+    background-color: #fdfbe1;
+}
+
+.nav-flex-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img.custom-logo {
+    width: 100%;
+    height: auto;
+}
+
+/* End of Header Styles */
+
+/* Recipe Section styles */
+.recipe-flex-item {
+    text-align: center;
+}
+/* End of Recipe Section Styles */
+
+/* Recipes Page Styles */
+.all-recipe-flex-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h2.recipes-page-heading{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    color: #fbf49d;
+}
+
+.recipes-heading-background{
+    background: #241C11;
+}
+
+/* img.attachment-medium.size-medium.wp-post-image {
+    min-width: 300px;
+    min-height: 560px;
+
+} */
+
+/* Individual Recipe Page Styles */
+.preparation-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.post-categories{
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.preparation-container div{
+    width: 48%;
+}
+
+img.attachment-large.size-large.wp-post-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.single img.attachment-large.size-large {
+    height: auto;
+    width: 100%;
+}
+
+.color-background-recipe {
+    background: #241c11;
+    padding: 10rem 1rem; 
+}
+
+/* Footer Styles */
+.footer-flex {
+    border-top: 2px solid #241C11;
+    margin-top: 1rem;
+}
+/* End of Footer Styles */
+
+
+/* Media Queries */
+@media screen and (min-width: 800px){
+
+    /* Header Styles */
+
+    header a:hover{
+        color: #241C11;
+    }
+
+    header li:hover{
+        background-color: #fdfbe1;
+    }
+
+    header{
+        margin: 0 auto;
+    }
+
+    .header-nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    
+    header nav {
+        position: static;
+        width: auto;
+        max-height: 22rem;
+        overflow: visible;
+    }
+
+    .menu-menu-1-container ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .show-nav, header nav {
+        background-color: transparent;
+    }
+    
+    .menu-menu-1-container ul li {
+        padding-left: 2rem;
+    }
+
+    .header-nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
+    /* Navigation */
+    .toggle-btn {
+        display: none;
+    }
+
+    .page-id-20 img.attachment-my-photos.size-my-photos {
+        height: auto;
+        width: auto;
+    }
+    
+
+/* .header-nav-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+    /* Banner Styles */
+    .banner-overlay{
+        position: absolute;
+        width: 48%;
+        top: 10rem;
+        right: 0rem;
+    }
+    .banner-section{
+        display: flex;
+        align-items: center;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    /* End of Banner Styles */
+
+    /* About Us Styles */
+    .more-about-us-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .more-about-us-flex-item{
+        width: 48%;
+    }
+
+    .banner-image{
+        height: auto;
+        width: auto;
+    }
+
+    /* End of About Us Styles */
+
+    /* Recipe Section Blurb Styles */
+    .recipe-section-blurb-flex-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    }
+
+    /* Recipe Section Styles */
+    .recipes-flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1280px;
+        margin: 0 auto;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .recipe-flex-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .recipe-div {
+        width: 60ch;
+    }
+    /* End of Recipe Section Styles */
+
+    /* Recipes Page Styles */
+    .all-recipe-flex-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .page-id-20 .recipe-flex-item{
+        flex: 0;
+        width: 48%
+    }
+
+    /* Individual Recipe Styles */
+    .individual-recipe-flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+    .categories-container{
+        display: flex;
+        gap: 1rem;
+        white-space: nowrap;
+    }
+
+    .steps-instructions-flex-container{
+        display: flex;
+        justify-content: center;
+        max-width: 1280px;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+    .si-flex-item {
+        width: 70ch;
+    }
+
+    /* Footer Styles */
+    .footer-flex{
+        display: flex;
+        padding: 1rem;
+        gap: 2rem;
+        align-items: center;
+        max-width: 1280px;
+        margin: 1rem auto;
+    }
+
+}
+/* End of Media Queries */
